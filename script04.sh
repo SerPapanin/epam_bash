@@ -13,3 +13,13 @@
 # - run your script with "hi world 7 9" arguments
 # - add TEST environment variable with "123" value
 # - re-run the script with "hello hello 10 7" arguments
+[[ "$1" == "$2" ]]
+echo $?
+[[ "$1" > "$2" ]]
+echo $?
+[[ -z  $TEST ]]
+echo $?
+[[ $3 -eq $4 ]]
+echo $?
+[[ $3 -ge $4 ]]
+echo $?
